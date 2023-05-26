@@ -1,8 +1,8 @@
 export default function({store, redirect}){
     const currentUser = {
-      user: store.state.auth.user
+      user: store.state.log.user
     }
-    if (!currentUser.user){ // Если пользователь пустой то его возвращает на /auth/signin
-      return redirect('/auth/signin')
+    if (!currentUser.user){ // Если пользователь пустой то его возвращает на /log/signin
+      return redirect('/log/signin')
     }
 }

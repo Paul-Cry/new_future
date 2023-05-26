@@ -37,6 +37,10 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
   ],
+  plugins: [
+    // ...
+    { src: '~/plugins/nuxt-instance.js', ssr: false }
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

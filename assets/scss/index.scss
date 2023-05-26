@@ -257,6 +257,17 @@ html{
                    opacity: 0;
                 }
             }
+            &.active{
+                color: white;
+                background: $button_clr;
+                box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+                &  .img_activ{
+                   opacity: 1;
+                }
+                & .img{
+                   opacity: 0;
+                }
+            }
             p{
                 padding-left: 35px;
                 margin: 0;
@@ -269,12 +280,17 @@ html{
     &-cards{
         padding-top: 48px;
         padding-bottom: 133px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
     .cards-items{
             width: 300px;
             height: 341px;
             border-radius: 10px;
+            display: flex;
     }
     .card{
+        margin: 0 auto;
         &-img-top{
             width: auto;
             max-height: 185px;
@@ -306,6 +322,75 @@ html{
 }
 
 
+.contact{
+    background-color: #fff;
+    &__title{
+        padding-top: 33px;
+        margin-bottom: 46px;
+    }
+    &-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 126px;
+
+    }
+}
+
+.about{
+    height: 72vh;
+}
+
+.warranty{
+    height: 100% ;
+    color: white;
+    background: url('/img/warranty_back.png');
+    &.pay{
+        background: url('/img/pay.png') !important;
+        height: 72vh;
+    }
+    background-size: cover;
+    height: 72vh;
+    &__title{
+        padding-top: 122px;
+        font-size: 28px;
+        margin-bottom: 22px;
+    }
+    &-text{
+        font-size: 20px;
+        padding-bottom: 62px;
+        margin: 0;
+    }
+    &-quality{
+        display: flex;
+        justify-content: space-between;
+        // padding-bottom: 245px;
+        &-item{
+            display: flex;
+            align-items: center;
+        }
+        p{
+            margin: 0;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+    }
+}
+
+.exit{
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+.user{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p{
+        padding-right: 20px;
+        margin: 0;
+    }
+}
 
 
 

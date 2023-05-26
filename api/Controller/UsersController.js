@@ -50,7 +50,7 @@ exports.signin = (req, res) => {
           if (err) throw err;
   
           if (match) {
-            res.status(200).json({ message: 'User authenticated successfully' });
+            res.status(200).json({ user: username});
           } else {
             res.status(401).json({ message: 'Invalid username or password' });
           }

@@ -5,6 +5,10 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  background: url('/img/signin.png');
+  &.register{
+    background: url('/img/2b.png') !important;
+  }
   &__title{
     text-align: center;
     margin-top: 0;
@@ -81,9 +85,12 @@
 
 .team.sign{
   width: max-content;
+  min-width: 490px;
   height: max-content;
   margin-top: 0;
-  padding: 25px 160px;
-  background:$item_block;
+  max-height: 595px;
+  padding: 60px 108px;
+  background:$item_block;   
+  border-radius: 50px;
 }
 

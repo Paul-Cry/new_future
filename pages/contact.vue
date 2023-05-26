@@ -1,11 +1,11 @@
 <template>
     <div class="contact">
-        <h1 class="contact__title">
+        <h1 class="contact__title text-center">
             Контактная информация
         </h1>
-        <div class="contact-content">
+        <div class="contact-content container">
             <div class="contact-content-text">
-                <p>АДРЕС: </p>
+                <p>АДРЕС: Андреевский заезд 7</p>
                 <P>РЕЖИМ РАБОТЫ: c 10:00 до 20:00</P>
                 <p>ТЕЛЕФОН: +7 (982) 519-04-19</p>
             </div>
